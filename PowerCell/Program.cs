@@ -41,9 +41,8 @@ namespace PowerCell
         {
             this.charge=200;
         }
-        private void Namecharge(string name, int charge)
+        public Cell(string name)
         {
-            this.name=name;
             charge=200;
         }
 
