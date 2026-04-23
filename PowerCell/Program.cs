@@ -1,8 +1,52 @@
 using System;
+using System.Dynamic;
 using System.Globalization;
 
 namespace PowerCell
 {
+    public class Cell
+    {
+        private float charge;
+        public string name;
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+        }
+        public float Charge
+        {
+            set
+            {
+                Random rnd = new Random();
+                charge = rnd.Next(0,200);
+            }
+        }
+        public int level;
+        public int Level
+        {
+            get
+            {
+                return level;
+            }
+        }
+
+        private void Consume(float amount)
+        {
+            amount=amount-this.charge;
+        }
+        private void Restore(int charge)
+        {
+            this.charge=200;
+        }
+        private void Namecharge(string name, int charge)
+        {
+            this.name=name;
+            charge=200;
+        }
+
+    }
     public class Program
     {
         // Argumentos:
