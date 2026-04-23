@@ -11,6 +11,7 @@ namespace PowerCell
         public string name;
         public string Name
         {
+            
             get
             {
                 return name;
