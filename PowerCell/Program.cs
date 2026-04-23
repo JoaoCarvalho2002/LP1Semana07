@@ -6,6 +6,7 @@ namespace PowerCell
 {
     public class Cell
     {
+        
         private float charge;
         public string name;
         public string Name
